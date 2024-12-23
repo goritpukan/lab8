@@ -7,6 +7,7 @@
 int main(void) {
   char restart = 0;
   do {
+    printSchemes();
     unsigned schemeChoice = 0;
     double r1 = 0.0, r2 = 0.0, l = 0.0, c = 0.0, fmin = 0.0, fmax = 0.0, step = 0.0;
     schemeChoice = getUserChoice("Choose scheme", 1, 4);
