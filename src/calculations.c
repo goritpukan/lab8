@@ -4,7 +4,6 @@
 #include "../include/calculations.h"
 #include "../include/io.h"
 
-
 double calculateResonanceFrequency(double l, double c) {
   return 1.0 / (2.0 * M_PI * sqrt(l * c));
 }
@@ -69,7 +68,7 @@ void calculate(const double fmin, const double fmax, const double r1, const doub
     const double omega = 2.0 * M_PI * f;
     switch (scheme) {
       case 1:
-         printComplexResult(calculateSchemeA(r1, l, c, omega), f, i);
+        printComplexResult(calculateSchemeA(r1, l, c, omega), f, i);
         break;
       case 2:
         printComplexResult(calculateSchemeB(r1, l, c, omega), f, i);

@@ -39,6 +39,7 @@ double getDoubleFromUser(const char *message, const double min, const double max
   } while (!isValid);
   return result;
 }
+
 void printComplexResult(const Complex result, const double f, const int i) {
-  printf("f%d = %lf: %e + i * %e\n", i + 1, f ,result.real, result.imaginary);
+  printf("f%d = %lf: %e + i * %e\n", i + 1, f, result.real, result.imaginary);
 }
